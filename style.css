@@ -4,7 +4,7 @@ body {
     background: gray;
 }
 header {
-    background: ;
+    background: black;
     color: aliceblue;
     display: flex;
     justify-content: space-between;
@@ -32,7 +32,7 @@ nav a {
     margin: 10px 0;
     border-radius: 5px;
     border: none;
-    background: floralwhite;
+    background: ;
     color: aliceblue;
 }
 .buttons {

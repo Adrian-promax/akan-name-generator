@@ -18,7 +18,7 @@ function getAkanName() {
     let maleNames = ["Kwasi", "Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
     let femaleNames = ["Akosua","Adwoa","Abenna","Akua","Yaa","Afua","Ama"];
 
-    Let getAkanName;
+    let getAkanName;
 
     if (gender ==="male") {getAkanName = maleNames[day];
     } else {
@@ -26,5 +26,9 @@ function getAkanName() {
     }
 
     document.getElementById("result").innerHTML =
-       `Your Akan name `
+       `Your Akan name is <b>${akanName}</b><br>You were born on <b>${days[day]}</b>`;
+
+    function resetForm() {
+
+    }   
 }
