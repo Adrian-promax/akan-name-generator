@@ -14,5 +14,17 @@ function getAkanName() {
     let d = new Date(year, month - 1, date);
     let day = d.getDay();
 
-    let days = 
+    let days = ["Sunday", "Monday","Teusday","Wednesday","Thursday","Friday","Saturday"];
+    let maleNames = ["Kwasi", "Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+    let femaleNames = ["Akosua","Adwoa","Abenna","Akua","Yaa","Afua","Ama"];
+
+    Let getAkanName;
+
+    if (gender ==="male") {getAkanName = maleNames[day];
+    } else {
+        akanName =femaleNames[day];
+    }
+
+    document.getElementById("result").innerHTML =
+       `Your Akan name `
 }
