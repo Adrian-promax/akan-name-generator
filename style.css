@@ -64,14 +64,12 @@ nav a:hover {
     margin-bottom: 20px;
     color: #333;
 }
-
 .form-box label {
     display: block;
     margin-top: 15px;
     font-weight: 600;
     color: #333;
 }
-
 .form-box input, .form-box select {
     width: 100%;
     padding: 10px;
@@ -81,19 +79,16 @@ nav a:hover {
     font-size: 16px;
     transition: all 0.3s ease;
 }
-
 .form-box input:focus, .form-box select:focus {
     outline: none;
     border-color: #667eea;
     box-shadow: 0 0 0 3px rgba(102,126,234,0.1);
 }
-
 .button-group {
     margin-top: 25px;
     display: flex;
     gap: 10px;
 }
-
 button {
     padding: 12px 20px;
     border: none;
@@ -103,29 +98,24 @@ button {
     font-weight: 600;
     transition: all 0.3s ease;
 }
-
 #generateBtn {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     flex: 2;
 }
-
 #generateBtn:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(102,126,234,0.3);
 }
-
 #resetBtn {
     background: #6c757d;
     color: white;
     flex: 1;
 }
-
 #resetBtn:hover {
     background: #5a6268;
     transform: translateY(-2px);
 }
-
 .result-box {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     max-width: 500px;
@@ -136,7 +126,6 @@ button {
     color: white;
     animation: slideUp 0.4s ease-out;
 }
-
 @keyframes slideUp {
     from {
         opacity: 0;
@@ -147,7 +136,6 @@ button {
         transform: translateY(0);
     }
 }
-
 .akan-name {
     font-size: 2.5rem;
     font-weight: bold;
@@ -155,24 +143,20 @@ button {
     color: #ffd700;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
-
 .day-info {
     font-size: 1rem;
     margin-bottom: 20px;
 }
-
 #closeBtn {
     background: white;
     color: #667eea;
     padding: 10px 25px;
     margin-top: 10px;
 }
-
 #closeBtn:hover {
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
-
 footer {
     text-align: center;
     padding: 20px;
@@ -180,27 +164,22 @@ footer {
     font-size: 0.8rem;
     margin-top: 20px;
 }
-
 @media (max-width: 600px) {
     .form-box, .result-box {
-        margin: 10px;
-        padding: 20px;
-    }
-    
-    .akan-name {
-        font-size: 1.8rem;
-    }
-    
-    .button-group {
-        flex-direction: column;
-    }
-    
-    header {
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    nav a {
-        margin: 0 10px;
+    margin: 10px;
+    padding: 20px;
+}    
+.akan-name {
+    font-size: 1.8rem;
+}
+.button-group {
+    flex-direction: column;
+} 
+header {
+    flex-direction: column;
+    gap: 10px;
+}
+nav a {
+    margin: 0 10px;
     }
 }

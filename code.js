@@ -56,7 +56,7 @@ function resetForm() {
   document.getElementById("date").value = "";
   document.getElementById("month").value = "";
   document.getElementById("year").value = "";
-  document.getElementById("gender").value = "male";
+  document.getElementById("gender").value = "";
   document.getElementById("resultBox").style.display = "none";
 }
 
