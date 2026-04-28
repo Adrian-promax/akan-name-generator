@@ -147,12 +147,6 @@ button {
     font-size: 1rem;
     margin-bottom: 20px;
 }
-#closeBtn {
-    background: white;
-    color: #667eea;
-    padding: 10px 25px;
-    margin-top: 10px;
-}
 #closeBtn:hover {
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
