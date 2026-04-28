@@ -2,15 +2,12 @@
 <html lang="en">
 <head>
     <title>Akan Name Generator</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
     <header>
-        <img src="akan.jpg">
-        <h1>Akan Name Generator</h1>
-
-        <!-- navigation-->
+        <h1>Akan</h1>
         <nav>
             <a href="#">Home</a>
             <a href="#">About</a>
@@ -18,8 +15,9 @@
         </nav>
     </header>
 
-     <!-- Form-->
-      <div class="form-box">
+    <h1 class="title">AKAN NAME GENERATOR</h1>
+
+    <section class="form-box">
         <h2>When were you born</h2>
 
         <label>Date:</label>
@@ -37,21 +35,23 @@
             <option value="female">Female</option>
         </select>
 
-        <button type="submit" id="submit-button">Submit</button>
-        <button type="reset" id="rest-button">Reset</button>
+        <div class="button-group">
+            <button type="button" id="generateBtn">Generate Akan Name</button>
+            <button type="button" id="resetBtn">Reset</button>
         </div>
+    </section>
 
-        <div class="result-box" id="resultBox" syle="display: none;">
-            <h2> Your Akan Name</h2>
-            <p id="akanName" class="akan-name"></p>
-            <p id="day of the week" class="akan-name"></p>
-            <button type="button" id="closeBtn">Close</button>
-        </div>
-        </div>
+    <section class="result-box" id="resultBox" style="display: none;">
+        <h2> Your Akan Name </h2>
+        <p id="akanName" class="akan-name"></p>
+        <p id="dayOfWeek" class="day-info"></p>
+        <button type="button" id="closebutton">Close</button>
+    </section>
 
-        <div id="result">result</div>
+    <footer>
+        <p>© 2026 Celebrating Akan Culture</p>
+    </footer>
 
-        
     <script src="code.js" defer></script>
 </body>
 </html>
