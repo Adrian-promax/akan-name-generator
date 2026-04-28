@@ -1,17 +1,21 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background: gray;
+    background: #f4f4f4;
+}
+img {
+    width: 100px;
+    height: 150px;
 }
 header {
-    background: black;
-    color: aliceblue;
+    background: brown;
+    color: white;
     display: flex;
     justify-content: space-between;
     padding: 15px 30px;
 }
 nav a {
-    color: aliceblue;
+    color: white;
     margin-left: 20px;
     text-decoration: none;
 }
@@ -21,9 +25,15 @@ nav a {
 }
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 20px;
+}
+.form-box {
+    background: brown;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
 }
 .form-box input,
 .form-box select {
@@ -33,7 +43,7 @@ nav a {
     border-radius: 5px;
     border: none;
     background: ;
-    color: aliceblue;
+    color: white;
 }
 .buttons {
     display: flex;
@@ -46,10 +56,20 @@ button {
     cursor: pointer;
 }
 .reset {
-    background: ;
-    color: aliceblue;
+    background: red;
+    color: white;
 }
 .submit {
-    background: ;
-    color: aliceblue;
+    background: green;
+    color: white;
 }
+#result {
+    text-align: center;
+    background: #333;
+    color: white;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
