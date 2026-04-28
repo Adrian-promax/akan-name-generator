@@ -1,5 +1,7 @@
+NAME OF PROJECT:
+     Akan Name Generator.
 AUTHOR:
-     Adrian Nyakundi
+     Adrian Nyakundi.
 
 ABOUT:
      A web application that calculates the day of the week a user was
@@ -9,12 +11,12 @@ DESCRIPTON:
      In the Akan culture children were given their names based on the day 
      they were born and their gender. This is how it basically works;
 
-1. Takes a user's birthdate (day, month, year) and gender as input
-2. Validates that day is between 1-31 and month is between 1-12
-3. Calculates the day of the week using a mathematical formula
-4. Uses arrays to store male and female Akan names
-5. Assigns the corresponding Akan name based on gender
-6. Displays the result with error handling via alerts       
+1. Takes a user's birthdate (day, month, year) and gender as input.
+2. Validates that day is between 1-31 and month is between 1-12.
+3. Calculates the day of the week using a mathematical formula.
+4. Uses arrays to store male and female Akan names.
+5. Assigns the corresponding Akan name based on gender.
+6. Displays the result with error handling via alerts.       
 
-
-I placed the names and the days in the arrays, then I calculated the CC, MM, YY and the DD
+TECHNOLOGIES:
+     I have used HTML, CSS and 

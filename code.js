@@ -23,7 +23,6 @@ function calculateDayOfWeek(CC, YY, MM, DD) {
 
   return result;
 }
-
 // Main function to generate Akan name - NO VALIDATION
 function generateAkanName() {
   // Get values
@@ -44,13 +43,11 @@ function generateAkanName() {
   } else {
     akanName = femaleNames[dayIndex];
   }
-
   // Display result
   document.getElementById("akanName").textContent = akanName;
   document.getElementById("dayOfWeek").textContent =`Born on a ${daysOfWeek[dayIndex]}`;
   document.getElementById("resultBox").style.display = "block";
 }
-
 // Reset function
 function resetForm() {
   document.getElementById("date").value = "";
@@ -59,12 +56,10 @@ function resetForm() {
   document.getElementById("gender").value = "";
   document.getElementById("resultBox").style.display = "none";
 }
-
 // Close result function
 function closeResult() {
   document.getElementById("resultBox").style.display = "none";
 }
-
 // Event listeners
 document
   .getElementById("generateBtn")
