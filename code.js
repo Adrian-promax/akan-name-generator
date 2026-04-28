@@ -29,6 +29,9 @@ function getAkanName() {
        `Your Akan name is <b>${akanName}</b><br>You were born on <b>${days[day]}</b>`;
 
     function resetForm() {
-
+        document.getElementById("date").value ="";
+        document.getElementById("month").value ="";
+        document.getElementById("year").value ="";
+        document.getElementById("result").innerHTML ="";
     }   
 }

@@ -8,6 +8,9 @@
 
     <header>
         <h1>Akan</h1>
+        <!--Title-->
+     <h1 class="title">AKAN NAME GENERATOR</h1>
+
         <!-- navigation-->
         <nav>
             <a href="home">Home</a>
@@ -16,11 +19,8 @@
         </nav>
     </header>
 
-    <!-- Title -->
-     <h1 class="title">AKAN NAME GENERATOR</h1>
-
      <!-- Form-->
-      <section class="form-box">
+      <div class="form-box">
         <h2>When were you born</h2>
 
         <label>date:</label>
@@ -37,7 +37,17 @@
             <option value="male">Male</option>
             <option value="female">Female</option>
         </select>
-        </section>
+        </div>
+
+        <div class="result-box" id="resultBox" syle="display: none;">
+            <h2> Your Akan Name</h2>
+            <p id="akanName" class="akan-name"></p>
+            <p id="day of the week" class="akan-name"></p>
+            <button type="button" id="closeBtn">Close</button>
+        </div>
+        </div>
+
+        <div id="result">result</div>
 
         
     <script src="code.js" defer></script>
