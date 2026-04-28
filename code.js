@@ -9,8 +9,8 @@ const daysOfWeek = [
 
 // Calculate day of week using the formula function
 function calculateDayOfWeek(CC, YY, MM, DD) {
-  let term1 = Math.floor(CC / 4);
-  let term2 = -2 * CC - 1;
+  let term1 = Math.floor(CC / 4);         //adjusting the leap years
+  let term2 = -2 * CC - 1;                //bcz calender shift backwards counteracting drift
   let term3 = Math.floor((5 * YY) / 4);
   let term4 = Math.floor((26 * (MM + 1)) / 10);
 
