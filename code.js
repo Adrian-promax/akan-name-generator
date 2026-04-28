@@ -1,42 +1,86 @@
-function getAkanName() {
-    let date = document.getElementById("date").value;
-    let month = document.getElementById("month").value;
-    let year = document.getElementById("year").value;
-    let gender = document.getElementById("gender").value;
+// Arrays for Akan names
+const maleNames = [
+  "Kwasi",
+  "Kwadwo",
+  "Kwabena",
+  "Kwaku",
+  "Yaw",
+  "Kofi",
+  "Kwame",
+];
+const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+const daysOfWeek = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
 
-    //Validate input
-    if (!date || !month || !year) {
-        alert("Please fill all fields");
-        return;
-    }
+// Calculate day of week using the formula
+function calculateDayOfWeek(CC, YY, MM, DD) {
+  let term1 = Math.floor(CC / 4);
+  let term2 = -2 * CC - 1;
+  let term3 = Math.floor((5 * YY) / 4);
+  let term4 = Math.floor((26 * (MM + 1)) / 10);
 
-    //calculate date of the week
-    let d = new Date(year, month - 1, date);
-    let day = d.getDay();
+  let result = (term1 + term2 + term3 + term4 + DD) % 7;
 
-    let days = [
-        "Sunday",
-         "Monday","Teusday","Wednesday","Thursday","Friday","Saturday"];
-    let maleNames = ["Kwasi", "Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
-    let femaleNames = ["Akosua","Adwoa","Abenna","Akua","Yaa","Afua","Ama"];
+  // Handle negative results
+  if (result < 0) {
+    result += 7;
+  }
 
-    let getAkanName;
-
-    if (gender ==="male") {
-        getAkanName = maleNames[day];
-
-        return = maleNames={}
-    } else {
-        akanName =femaleNames[day];
-    }
-
-    document.getElementById("result").innerHTML =
-       `Your Akan name is <b>${akanName}</b><br>You were born on <b>${days[day]}</b>`;
-
-    function resetForm() {
-        document.getElementById("date").value ="";
-        document.getElementById("month").value ="";
-        document.getElementById("year").value ="";
-        document.getElementById("result").innerHTML ="";
-    }   
+  return result;
 }
+
+// Main function to generate Akan name - NO VALIDATION
+function generateAkanName() {
+  // Get values
+  const day = parseInt(document.getElementById("date").value);
+  const month = parseInt(document.getElementById("month").value);
+  const year = parseInt(document.getElementById("year").value);
+  const gender = document.getElementById("gender").value;
+
+  // Calculate century and year
+  const century = Math.floor(year / 100);
+  const yearInCentury = year % 100;
+  const dayIndex = calculateDayOfWeek(century, yearInCentury, month, day);
+
+  // Get name based on gender
+  let akanName;
+  if (gender === "male") {
+    akanName = maleNames[dayIndex];
+  } else {
+    akanName = femaleNames[dayIndex];
+  }
+
+  // Display result
+  document.getElementById("akanName").textContent = akanName;
+  document.getElementById("dayOfWeek").textContent =
+    `Born on a ${daysOfWeek[dayIndex]}`;
+  document.getElementById("resultBox").style.display = "block";
+}
+
+// Reset function
+function resetForm() {
+  document.getElementById("date").value = "";
+  document.getElementById("month").value = "";
+  document.getElementById("year").value = "";
+  document.getElementById("gender").value = "male";
+  document.getElementById("resultBox").style.display = "none";
+}
+
+// Close result function
+function closeResult() {
+  document.getElementById("resultBox").style.display = "none";
+}
+
+// Event listeners
+document
+  .getElementById("generateBtn")
+  .addEventListener("click", generateAkanName);
+document.getElementById("resetBtn").addEventListener("click", resetForm);
+document.getElementById("closeBtn").addEventListener("click", closeResult);
