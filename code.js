@@ -1,25 +1,13 @@
 // Arrays for Akan names
 const maleNames = [
-  "Kwasi",
-  "Kwadwo",
-  "Kwabena",
-  "Kwaku",
-  "Yaw",
-  "Kofi",
-  "Kwame",
+  "Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame",
 ];
 const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 const daysOfWeek = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
+  "Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday",
 ];
 
-// Calculate day of week using the formula
+// Calculate day of week using the formula function
 function calculateDayOfWeek(CC, YY, MM, DD) {
   let term1 = Math.floor(CC / 4);
   let term2 = -2 * CC - 1;
