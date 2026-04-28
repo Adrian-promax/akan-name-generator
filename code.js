@@ -47,8 +47,7 @@ function generateAkanName() {
 
   // Display result
   document.getElementById("akanName").textContent = akanName;
-  document.getElementById("dayOfWeek").textContent =
-    `Born on a ${daysOfWeek[dayIndex]}`;
+  document.getElementById("dayOfWeek").textContent =`Born on a ${daysOfWeek[dayIndex]}`;
   document.getElementById("resultBox").style.display = "block";
 }
 
