@@ -16,4 +16,5 @@ DESCRIPTON:
 5. Assigns the corresponding Akan name based on gender
 6. Displays the result with error handling via alerts       
 
+
 I placed the names and the days in the arrays, then I calculated the CC, MM, YY and the DD

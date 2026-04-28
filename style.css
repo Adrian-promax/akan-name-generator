@@ -99,16 +99,17 @@ button {
     transition: all 0.3s ease;
 }
 #generateBtn {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-color: #667eea;
+    box-shadow: 0 5px 15px;
     color: white;
     flex: 2;
 }
 #generateBtn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(102,126,234,0.3);
+    box-shadow: 0 5px 15px;
 }
 #resetBtn {
-    background: #6c757d;
+    background: #667eea;
     color: white;
     flex: 1;
 }
@@ -126,16 +127,7 @@ button {
     color: white;
     animation: slideUp 0.4s ease-out;
 }
-@keyframes slideUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+
 .akan-name {
     font-size: 2.5rem;
     font-weight: bold;
@@ -157,23 +149,4 @@ footer {
     color: white;
     font-size: 0.8rem;
     margin-top: 20px;
-}
-@media (max-width: 600px) {
-    .form-box, .result-box {
-    margin: 10px;
-    padding: 20px;
-}    
-.akan-name {
-    font-size: 1.8rem;
-}
-.button-group {
-    flex-direction: column;
-} 
-header {
-    flex-direction: column;
-    gap: 10px;
-}
-nav a {
-    margin: 0 10px;
-    }
 }
