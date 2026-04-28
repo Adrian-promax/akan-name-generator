@@ -19,4 +19,8 @@ DESCRIPTON:
 6. Displays the result with error handling via alerts.       
 
 TECHNOLOGIES:
-     I have used HTML, CSS and 
+     I have used HTML, CSS and JAVASCRIPT
+
+PROJECT INSTRUCTIONS:
+     I started me project in the github the copied the link which i went and pasted it in
+     Ubuntu where i git cloned it 
