@@ -24,3 +24,6 @@ TECHNOLOGIES:
 PROJECT INSTRUCTIONS:
      I started me project in the github the copied the link which i went and pasted it in
      Ubuntu where i git cloned it 
+
+ COPYWRITE
+    © 2026 Celebrating Akan Culture
