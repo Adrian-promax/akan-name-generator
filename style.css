@@ -4,8 +4,8 @@ body {
     background: #f4f4f4;
 }
 img {
-    width: 100px;
-    height: 150px;
+    width: 70px;
+    height: 100px;
 }
 header {
     background: brown;
@@ -33,8 +33,8 @@ nav a {
     background: brown;
     padding: 20px;
     border-radius: 10px;
-    width: 250px;
-    height: 300PX;
+    width: 500px;
+    height: 180px;
 }
 .form-box input,
 .form-box select {
