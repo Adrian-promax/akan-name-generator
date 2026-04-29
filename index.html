@@ -1,38 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <title>Akan Name Generator</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+    <img src="akan.jpg" alt="culture">
+    <h2>Akan Name Generator</h2>
+    </header>
 
-<h2>Akan Name Generator</h2>
+    <div><h1>Akan Name Generator</h1></div>
+        
+    <form id="akanForm">
+        <div class ="form-group"></div>
+      <label>Day:</label>
+      <input type="number" id="day" min="1" max="31" required /><br /><br />
 
-<form id="akanForm">
+      <label>Month:</label>
+      <input type="number" id="month" min="1" max="12" required /><br /><br />
 
-    <label>Day:</label>
-    <input type="number" id="day" min="1" max="31" required><br><br>
+      <label>Year:</label>
+      <input type="number" id="year" min="1800" max="2026" required /><br /><br />
 
-    <label>Month:</label>
-    <input type="number" id="month" min="1" max="12" required><br><br>
-
-    <label>Year:</label>
-    <input type="number" id="year" min="1800" max="2026" required><br><br>
-
-    <label>Gender:</label>
-    <select id="gender" required>
+      <label>Gender:</label>
+      <select id="gender" required>
         <option value="">Select</option>
         <option value="male">Male</option>
-        <option value="female">Female</option>
-    </select><br><br>
+        <option value="female">Female</option></select
+      ><br /><br />
+       
 
-    <button type="submit">Generate</button>
-    <button type="reset">Reset</button>
+      <button type="submit">Generate</button>
+      <button type="reset">Reset</button>
+    </form>
 
-</form>
+    <h3 id="result"></h3>
 
-<h3 id="result"></h3>
-
-<script src="code.js"></script>
-
-</body>
+    <script src="code.js"></script>
+  </body>
 </html>
