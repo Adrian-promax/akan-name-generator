@@ -1,4 +1,4 @@
-// Arrays for Akan names
+// Arrays for Akan names like a list
 const maleNames = [
   "Kwasi",
   "Kwadwo",
@@ -27,10 +27,10 @@ const daysOfWeek = [
 ];
 
 // Calculate day of week using the formula
-function calculateDayOfWeek(CC, YY, MM, DD) {
-  let term1 = Math.floor(CC / 4);           //accounting for the leap years
-  let term2 = -2 * CC - 1;                  //adjusts calender when shifting through the centuries
-  let term3 = Math.floor((5 * YY) / 4);    //acounts for the leap years
+function calculateDayOfWeek(CC, YY, MM, DD) {     //the parameters
+  let term1 = Math.floor(CC / 4);                 //accounting for the leap years
+  let term2 = -2 * CC - 1;                        //adjusts calender when shifting through the centuries
+  let term3 = Math.floor((5 * YY) / 4);           //acounts for the leap years
   let term4 = Math.floor((26 * (MM + 1)) / 10);   //adjusts the month length
 
   let result = (term1 + term2 + term3 + term4 + DD) % 7;
@@ -112,7 +112,7 @@ function generateAkanName(event) {
 
   const dayIndex = calculateDayOfWeek(century, yearInCentury, month, day);
 
-  // Get name based on gender
+  // Getting the name based 
   let akanName;
   if (gender === "male") {
     akanName = maleNames[dayIndex];
