@@ -2,64 +2,37 @@
 <html lang="en">
 <head>
     <title>Akan Name Generator</title>
-    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <header>
-        <img src="akan.jpg">
-        <h1>Akan</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Form</a>
-        </nav>
-    </header>
-     <!--- Title -->
-    <section>
-    <h1 class="title">AKAN NAME GENERATOR</h1>
-    </section>
+<h2>Akan Name Generator</h2>
 
-    <!--Begining of form box-->
-    <section class="form-box">
-        <h2>When were you born</h2>
+<form id="akanForm">
 
-        <!--date section-->
-        <label>Date:</label>
-        <input type="number" id="date" placeholder="1-31">
-        
-        <!--month section-->
-        <label>Month:</label>
-        <input type="number" id="month" placeholder="1-12">
+    <label>Day:</label>
+    <input type="number" id="day" min="1" max="31" required><br><br>
 
-        <!-- year -->
-        <label>Year:</label>
-        <input type="number" id="year" placeholder="1800-2026">
-        
-        <!-- gender section -->
-        <label>Gender:</label>
-        <select id="gender">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-        </select>
+    <label>Month:</label>
+    <input type="number" id="month" min="1" max="12" required><br><br>
 
-        <div class="button-group">
-            <button type="button" id="generateBtn">Generate Akan Name</button>
-            <button type="button" id="resetBtn">Reset</button>
-        </div>
-    </section>
+    <label>Year:</label>
+    <input type="number" id="year" min="1800" max="2026" required><br><br>
 
-    <!-- where the result of the form will display-->
-    <section class="result-box" id="resultBox" style="display: none;">
-        <h2> Your Akan Name </h2>
-        <p id="akanName" class="akan-name"></p>
-        <p id="dayOfWeek" class="day-info"></p>
-    </section>
+    <label>Gender:</label>
+    <select id="gender" required>
+        <option value="">Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select><br><br>
 
-    <footer>
-        <p>© 2026 Celebrating Akan Culture</p>
-    </footer>
+    <button type="submit">Generate</button>
+    <button type="reset">Reset</button>
 
-    <script src="code.js" defer></script>
+</form>
+
+<h3 id="result"></h3>
+
+<script src="code.js"></script>
+
 </body>
 </html>
